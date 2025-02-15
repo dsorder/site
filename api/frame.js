@@ -36,3 +36,8 @@ export default function handler(req, res) {
   // Responde con el HTML que contiene el iframe
   res.status(200).send(iframeHtml);
 }
+export default function handler(req, res) {
+  res.status(200).json({
+    iframe: 'https://yourwebsite.com', // Pon aquí la URL de tu web que quieres mostrar dentro del iframe
+  });
+}
